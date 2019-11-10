@@ -5,7 +5,9 @@
 [Who Data](https://www.who.int/healthinfo/statistics/mortality_rawdata/en/)
 
 [pandas.DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+
 [Ploting API axes](https://matplotlib.org/3.1.1/api/axes_api.html)
+
 [styles](https://matplotlib.org/3.1.1/gallery/style_sheets/style_sheets_reference.html)
 
 ## Lehetseges celok
@@ -14,6 +16,14 @@
 * plotolni adatokat
 * transformalni amig megkapjuk ami erdekel
 * exportalni hogy megmutassuk masnak [html,md,pdf] 
+
+## Gyors Demo
+
+Csaba a gepen megmutatja:
+
+* Uj python notebook
+* cellak, navigacio, md/code
+* a 3x3-as matrixot letrehozunk, sliceoljuk, transofmaljuk, kiplotoljuk.
 
 ## Installalas
 
