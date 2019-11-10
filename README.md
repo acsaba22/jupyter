@@ -17,14 +17,6 @@
 * transformalni amig megkapjuk ami erdekel
 * exportalni hogy megmutassuk masnak [html,md,pdf] 
 
-## Gyors Demo
-
-Csaba a gepen megmutatja:
-
-* Uj python notebook
-* cellak, navigacio, md/code
-* a 3x3-as matrixot letrehozunk, sliceoljuk, transofmaljuk, kiplotoljuk.
-
 ## Installalas
 
 Valasz egy konyvtarat ahova a Jupyter-t instalalod. kb. 300M. Pl. `~/work/jupyterenv`
@@ -35,6 +27,7 @@ Es valasz egy konyvtarat ahova fejlesztesz. Pl. `~/work/datatry`
 Hozzunk letre egy virtualis environmentet:
 
 ```
+$ python3 --version
 $ cd ~/work
 $ sudo apt install python3-pip
 $ python3 -m venv jupyterenv
@@ -53,6 +46,15 @@ $ jupyter lab
 
 Ez valoszinuleg megnyitja a browseredben, de ha nem akkor nyisd meg a linket amit kiir a konzolra.
 
+## Gyors Demo
+
+Csaba a gepen megmutatja:
+
+* jupyterlab elinditas
+* Uj python notebook
+* cellak, navigacio, md/code
+* a 3x3-as matrixot letrehozunk, sliceoljuk, query-zuk, transofmaljuk, plotoljuk.
+* Ora menetenek megbeszelese
 
 ## jupyter cheet sheet
 
@@ -64,7 +66,7 @@ shortcutok:
 
 ## Magyar lakossag
 
-* Tolts le a pop es country_codes fileokat
+* A WHO-tol tolts le a pop, country_codes, documentation-t fileokat
 * Hozzal letre uj python notebookot
 * elso cellaban importok es alap beallitas
 
@@ -79,7 +81,7 @@ plt.rcParams['figure.figsize'] = [20, 7]
 ```
 
 * Olvasd be a pop es country_codes fileokat `pd.read_csv`, irasd ki a tartalmukat
-* country_codes-ok kozott keresd meg hungaryt `df[df.column == 'Hungary']`
+* country_codes-ok kozott keresd meg hungary-t `df[df.column == 'str']`
 * !Egyeztessunk
 * Egeszitsd ki a pop DataFramet egy 'CountryName' oszloppal (`pop['Country'].replace(name_map)`)
 * Pop1-ben van az osszlakossag. Plotold ki magyarorszag lakossagat 1950-tol mostanig. `df.plot(kind='scatter', x='Year', y='Pop1')`
