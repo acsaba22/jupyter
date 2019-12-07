@@ -101,3 +101,53 @@ plt.rcParams['figure.figsize'] = [20, 7]
 * Csinalj "elet" DataFrame-et ket oszloppal (ferfi, no) es sorok: 0(1950/0eves), 5(1955/5eves), 10(1960/10eves), stb...
 * Plotold ki, egy grafikonon hogyan oregedtek az 1950-ben szuletett ferfik/nok
 * Plotold ki az aranyukat.
+
+## Tovabbi jatszasi lehetosegek
+
+
+### Interaktiv plotok
+
+Probalj ki interaktiv plotokat. Ha fele tartod az egeret akkor kiirja hogy a pont melyik orszaghoz tartozik.
+
+
+Az instalalas hosszan fog tartani, kaveszunettel szamolj.
+
+```
+$ pip install plotly
+$ pip install cufflinks
+```
+
+[Jupyterlab Plotly widget instalalas](https://plot.ly/python/getting-started/) oldalrol ezt ird a koncolba:
+
+```
+# Avoid "JavaScript heap out of memory" errors during extension installation
+# (OS X/Linux)
+export NODE_OPTIONS=--max-old-space-size=4096
+
+# Jupyter widgets extension
+jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.1 --no-build
+
+# jupyterlab renderer support
+jupyter labextension install jupyterlab-plotly@1.3.0 --no-build
+
+# FigureWidget support
+jupyter labextension install plotlywidget@1.3.0 --no-build
+
+# Build extensions (must be done to activate extensions since --no-build is used above)
+jupyter lab build
+
+# Unset NODE_OPTIONS environment variable
+# (OS X/Linux)
+unset NODE_OPTIONS
+```
+
+### Jatszodj masik adathalmazzal
+
+Toltsd le [ezt a csv-t](https://tcdata360-backend.worldbank.org/api/v1/datasets/53/dump.csv). Ez a [Global Competitiveness Index](https://tcdata360.worldbank.org/indicators/gci) oldalrol toltheto le a "Download Source Data"-nal.
+
+Nezd meg az oszlopokat es plotolgassal.
+
+### Sajat adat?
+
+Van-e otlet hogy ranezzunk-e valamire: pl logok, tranzakciok, statisztikak.
+
